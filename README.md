@@ -15,17 +15,31 @@ Each lesson is a an individual assignment, but you will work out of the same rep
 Grading for this project is less rigid, given the open-ended instructions (View Grading Rubric). Make sure to follow the checklist for each lesson, but how you implement each task is entirely up to you!
 
 Section 2: Git Basics
+
 Lesson 2.1: Introduction to Git
+
 Section 3: How the Web Works
+
 Lesson 3.1: How the Web Works
+
 Section 4: Web Basics
+
 Lesson 4.1: HTML Basics
+
 Lesson 4.2: JavaScript and the DOM
+
 Lesson 4.3: HTML Forms and DOM Practice
+
 Lesson 4.4: CSS Basics
+
 Lesson 4.5: CSS Layout
+
 Section 5: How the Internet Works
+
 Lesson 5.1: How the Internet Works and Debugging
+
 Section 6: AJAX Basics
+
 Lesson 6.1: AJAX Basics
+
 Lesson 6.2: Working with the Fetch API
