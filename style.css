@@ -1,0 +1,421 @@
+/* Website Styling */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Header // Social Media Icons*/
+
+.fa { 
+    list-style-type: none;
+    padding: 1.375em;
+    margin: 0.938em;
+} 
+
+.fa-github { 
+    background: black; 
+    color: white; 
+} 
+
+.fa-linkedin { 
+    background: #007bb5; 
+    color: white; 
+} 
+
+.fa:hover{
+    opacity: 0.8;
+}
+
+header{
+    position:sticky;
+    top: 0em;
+    background-color: whitesmoke;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: visible;
+    background-color: whitesmoke;
+}
+    
+.navbar a{
+    display: flex;
+    justify-content: flex-start;
+    color: #00468B; 
+    padding: 0.625em;
+    text-decoration: none;
+}  
+    
+.navbar a:hover {
+    opacity: 0.8;
+    padding: 0.625em;
+    text-decoration: underline;
+}
+
+
+
+/* Fixed Page Background*/
+
+.fixed {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./images/pic1.jpg);
+    min-height: 31.25em;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.fixed h1{
+    color: #00468B;
+    float: left;
+    padding: 0.938em;
+    background-color:whitesmoke;
+    opacity: 0.5;
+}
+
+.fixed_about{
+    color: black;
+    position: absolute;
+    top: 6.25em;
+    right: 0.938em;
+    padding: 0.625em;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    letter-spacing: 0.188em;
+}
+
+
+/*  CSS Grid!- 7 total sections*/
+
+.grid {
+    display: grid;
+    font-size: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "about about about"
+    "skills skills skills"
+    "experience experience certList"
+    "priorexp projects projects"
+    "contact contact contact"
+    "msg msg msg";
+    text-align: center;
+}
+
+ .experience, .certList, 
+.projects, .priorexp, .msg{
+    border: #00468B solid 1px;
+    margin: 0.938em; 
+    padding: 0.625em;
+    box-shadow: 0.625em 0.625em #00468B;
+    font-size: 1em;
+}
+
+.msg{
+    margin: 0.938em; 
+}
+
+
+
+/* Grid Areas*/
+
+.about {
+    grid-area: about;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.certList {
+    grid-area: certList;
+}
+
+.priorexp{
+    grid-area: priorexp;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.msg {
+    grid-area: msg;
+}
+
+
+/* About */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.625em;
+} 
+
+.about img {
+    border-radius: 25%;
+    width: 15%;
+    height: auto;
+}
+
+.about h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #00468B;
+    font-weight: bolder;
+    font-size: 1.875em;
+}
+
+.about p {
+    font-size: 1.125em;
+    border: 1px solid #00468B;
+    background-color: whitesmoke;
+    padding: 0.313em;
+}
+
+
+
+/* Skills  Experience */
+
+.skills{
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 0.25em;
+    font-weight: bolder;
+    margin: 0.95em;
+    border: 1px solid #00468B;
+}
+
+
+.skills button{
+    color: #00468B;
+    font-size: 1.25em;
+    background-color: whitesmoke;
+    max-width: auto;
+    margin: 0.25em;
+    justify-self: start;
+    font-weight: bolder;
+}
+
+
+/* Experience Section & Cert List */
+.priorexp {
+    padding: 0.938em;
+    font-weight: bolder;
+
+}
+
+.experience h2, .certList h2, .priorexp h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    justify-self: center;
+    font-weight: bolder;
+
+}
+
+
+.experience ul, .certList ul, .priorexp ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: center;
+    margin: 0.938em;
+    font-size: 1.25em;
+    padding: 0.313em;
+
+}
+
+
+/* Project Section */
+
+.projects{
+    align-items: center;
+    padding: 0.938em;
+}
+
+.projects h2{
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;  
+}
+
+.projects ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: start;
+    font-size: 1.375em;
+}
+
+
+/* Contact */
+
+.contact form {
+    text-align: center;
+    color: black;
+    padding: 0.938em;
+    display: grid;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/pic1.jpg);
+    min-height: 31.25em;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    }
+
+.whitebackground {
+    background-color: whitesmoke;
+    display: inline-block;
+    justify-content: end;
+    align-items: center;
+    padding: 0.938em;
+    border: #00468B solid 1px;
+}
+
+
+.leave_message h2 {
+    text-decoration: underline;   
+    text-align: center;
+    justify-content: center;
+} 
+
+#usersName,
+#usersEmail,
+#usersMessage {
+    font-size: 1.375em;
+} 
+
+.submit_button{
+    background-color: #2ECBE9;
+}
+
+.submit_button:hover{
+    background-color: #00468B;
+    color: white;
+    align-items: center;
+}
+
+
+/* Message Display */
+
+
+.msg{
+    text-align: center;
+    color: black;
+    padding: 0.938em;
+}
+
+.msg h2 {   
+    text-align: center;
+    justify-content: center;
+} 
+
+
+/* Footer */
+
+
+footer{
+    color: #00468B;;
+} 
+
+footer div{
+    font-size: 0.625em;
+}
+
+footer a{
+    font-size: 1em;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 512px) {
+    .fixed {
+        background-repeat: repeat;
+        background-size: fill;
+        background-size: contain;
+    }
+    
+    nav {
+        display: block; 
+        text-align: center;
+        margin: 0;
+    }
+
+    .grid {    
+        display: block;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .navbar {
+        background-color: transparent;
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 1.5em;
+        text-align: center;
+    }
+
+    .fixed_about {
+        top: 5em;
+        right: 2em;
+        font-size: 0.8em;
+    }
+
+    .skills,
+    .experience h2,
+    .certList h2,
+    .priorexp h2,
+    .projects h2,
+    .contact form,
+    .leave_message h2,
+    #usersName,
+    #usersEmail,
+    #usersMessage,
+    .msg h2,
+    footer div,
+    footer a {
+        font-size: 1em;
+        margin: 0px;
+        padding: 0;
+        align-items: start;
+    }
+
+}
