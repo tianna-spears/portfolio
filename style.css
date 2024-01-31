@@ -24,11 +24,11 @@
     color: white; 
 } 
 
-.fa:hover{
+.fa:hover {
     opacity: 0.8;
 }
 
-header{
+header {
     position:sticky;
     top: 0em;
     background-color: whitesmoke;
@@ -367,19 +367,21 @@ footer a{
         background-size: fill;
         background-size: contain;
     }
+
+    .fa { 
+        padding: 0.50em;
+        margin: 0.50em;
+    } 
+
+    header {
+        position: static;
+        top: 0em;
+    }
     
     nav {
-        display: block; 
+        display: block;
         text-align: center;
         margin: 0;
-    }
-
-    .grid {    
-        display: block;
-    }
-
-    .about {
-        display: block;
     }
 
     .navbar {
@@ -389,7 +391,7 @@ footer a{
 
     .navbar a {
         display: block;
-        padding: 1.5em;
+        padding: 0.15em;
         text-align: center;
     }
 
@@ -397,6 +399,10 @@ footer a{
         top: 5em;
         right: 2em;
         font-size: 0.8em;
+    }
+
+    .grid, .about {    
+        display: block;
     }
 
     .skills,
