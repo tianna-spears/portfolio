@@ -119,7 +119,7 @@ nav {
     text-align: center;
 }
 
- .experience, .certList, 
+.experience, .certList, 
 .projects, .priorexp, .msg{
     border: #00468B solid 1px;
     margin: 0.938em; 
@@ -131,7 +131,6 @@ nav {
 .msg{
     margin: 0.938em; 
 }
-
 
 
 /* Grid Areas*/
@@ -168,6 +167,17 @@ nav {
     grid-area: msg;
 }
 
+/* Adding Blue to each Grid Header*/
+.skills h2,
+.experience h2,
+.certList h2,
+.priorexp h2,
+.projects h2,
+.contact h2 {
+    color: #00468B;
+    font-weight: bolder;
+}
+
 
 /* About */
 
@@ -179,9 +189,12 @@ nav {
 } 
 
 .about img {
-    border-radius: 25%;
+    border-radius: 50%;
     width: 15%;
     height: auto;
+    border-style: ridge;
+    background-color: #2a67a4;
+    padding: 0.1em;
 }
 
 .about h2 {
@@ -191,39 +204,65 @@ nav {
     font-size: 1.875em;
 }
 
+#title {
+    font-family: 'Open Sans', sans-serif;
+    color: #00468B;
+    font-size: 1em;
+}
+
 .about p {
     font-size: 1.125em;
-    border: 1px solid #00468B;
-    background-color: whitesmoke;
-    padding: 0.313em;
+    border: 1px solid whitesmoke;
+    color: white;
+    background-color: #2a67a4;
+    padding: 0.500em;
+    border-style:ridge;
+    letter-spacing: 0.1em;
+
+}
+
+.about a {
+    color: whitesmoke;
 }
 
 
-
 /* Skills  Experience */
+
+.skills h2 {
+    text-decoration: underline;
+}
+
 
 .skills{
     font-family: 'Open Sans', sans-serif;
     align-items: center;
     text-align: center;
     justify-content: center;
-    text-decoration: underline;
     padding: 0.25em;
     font-weight: bolder;
-    margin: 0.95em;
     border: 1px solid #00468B;
+}
+
+#skills_icons img{
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    justify-content: center;
+    padding: 0.25em;
+    border: none;
 }
 
 
 .skills button{
     color: #00468B;
     font-size: 1.25em;
-    background-color: whitesmoke;
     max-width: auto;
-    margin: 0.25em;
+    margin: 1em;
     justify-self: start;
-    font-weight: bolder;
+    border: none;
 }
+
 
 
 /* Experience Section & Cert List */
